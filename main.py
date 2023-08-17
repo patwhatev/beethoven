@@ -29,10 +29,10 @@ black_notes = pl.black_notes
 black_labels = pl.black_labels
 
 for i in range(len(white_notes)):
-    white_sounds.append(mixer.Sound(f'assets\\notes\\{white_notes[i]}.wav'))
+    white_sounds.append(mixer.Sound(f'assets/notes/{white_notes[i]}.wav'))
 
 for i in range(len(black_notes)):
-    black_sounds.append(mixer.Sound(f'assets\\notes\\{black_notes[i]}.wav'))
+    black_sounds.append(mixer.Sound(f'assets/notes/{black_notes[i]}.wav'))
 
 pygame.display.set_caption("Pete's Python Piano")
 
