@@ -5,10 +5,10 @@ from pygame import mixer
 pygame.init()
 pygame.mixer.set_num_channels(50)
 
-font = pygame.font.Font('assets/Terserah.ttf', 48)
-medium_font = pygame.font.Font('assets/Terserah.ttf', 28)
-small_font = pygame.font.Font('assets/Terserah.ttf', 16)
-real_small_font = pygame.font.Font('assets/Terserah.ttf', 10)
+font = pygame.font.Font('assets/Montserrat-Bold.ttf', 48)
+medium_font = pygame.font.Font('assets/Montserrat-Regular.ttf', 28)
+small_font = pygame.font.Font('assets/OpenSans-SemiboldItalic-webfont.ttf', 16)
+real_small_font = pygame.font.Font('assets/OpenSans-SemiboldItalic-webfont.ttf', 10)
 fps = 60
 timer = pygame.time.Clock()
 WIDTH = 52 * 35
@@ -137,15 +137,15 @@ def draw_hands(rightOct, leftOct, rightHand, leftHand):
 
 
 def draw_title_bar():
-    instruction_text = medium_font.render('Up/Down Arrows Change Left Hand', True, 'black')
-    screen.blit(instruction_text, (WIDTH - 500, 10))
-    instruction_text2 = medium_font.render('Left/Right Arrows Change Right Hand', True, 'black')
-    screen.blit(instruction_text2, (WIDTH - 500, 50))
-    img = pygame.transform.scale(pygame.image.load('assets/logo.png'), [150, 150])
-    screen.blit(img, (-20, -30))
-    title_text = font.render('Python Programmable Piano!', True, 'white')
+    # instruction_text = medium_font.render('Up/Down Arrows Change Left Hand', True, 'black')
+    # screen.blit(instruction_text, (WIDTH - 500, 10))
+    # instruction_text2 = medium_font.render('Left/Right Arrows Change Right Hand', True, 'black')
+    # screen.blit(instruction_text2, (WIDTH - 500, 50))
+    # img = pygame.transform.scale(pygame.image.load('assets/logo.png'), [150, 150])
+    # screen.blit(img, (-20, -30))
+    title_text = font.render('BEETHOVEN', True, 'white')
     screen.blit(title_text, (298, 18))
-    title_text = font.render('Python Programmable Piano!', True, 'black')
+    title_text = font.render('BEETHOVEN', True, 'black')
     screen.blit(title_text, (300, 20))
 
 
